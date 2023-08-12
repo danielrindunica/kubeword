@@ -9,4 +9,5 @@ module "gke" {
   subnetwork        = var.subnetwork[0]
   ip_range_pods     = var.ip_range_pods
   ip_range_services = var.ip_range_services
+  node_pools        = var.node_pools
 }
