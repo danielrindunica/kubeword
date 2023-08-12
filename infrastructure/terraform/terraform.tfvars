@@ -1,0 +1,9 @@
+project_id        = "ab-rotech-playground"
+name              = "kubeword"
+region            = "europe-west1"
+description       = "KubeWord: A Kubernetes Adventure with WordPress & MySQL"
+zones             = ["europe-west1-b"]
+network           = "default"
+subnetwork        = ["default"]
+ip_range_pods     = ""
+ip_range_services = ""
