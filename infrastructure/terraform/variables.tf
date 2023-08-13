@@ -34,3 +34,7 @@ variable "ip_range_services" {
   type        = string
   description = "The name of the secondary subnet range to use for services"
 }
+variable "node_pools" {
+  type        = list(map(any))
+  description = "List of maps containing node pools"
+}
