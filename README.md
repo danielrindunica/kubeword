@@ -86,7 +86,6 @@ Follow these instructions to effectively use kubeword:
 
 2. **Step-by-Step Guide:** Hot to enable SSL on my Blog.
 
-To be completated
 
 ## Configuration
 
@@ -101,3 +100,27 @@ kubeword offers flexibility through configuration options that allow you to tail
    - **Wordpress:** values.yaml
    - **Grafana:** values.yaml
    - **Prometheus:** values.yaml
+
+## License
+
+kubeword is distributed under the Apache License. See the [LICENSE](LICENSE) file for more details.
+
+This means you are free to:
+
+- **Use:** You can use, modify, and integrate kubeword into your projects.
+- **Share:** You can share your modified versions of kubeword with others.
+- **Distribute:** You can distribute the original or modified versions of kubeword in source or binary form.
+
+
+Please review the [LICENSE](LICENSE) file for the complete terms and conditions of the [License Name] License.
+
+## Contact Information
+
+If you have questions, feedback, suggestions, or just want to say hello, feel free to reach out:
+
+- Email: [rindunicadanielnicolae@outlook.com](mailto:rindunicadanielnicolae@outlook.com)
+- LinkedIn: [Daniel Rindunica](https://www.linkedin.com/in/rindunicadaniel)
+- GitHub: [danielrindunica](https://github.com/danielrindunica)
+
+We value your input and would love to hear from you!
+
