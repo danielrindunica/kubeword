@@ -44,7 +44,7 @@ Navigate to the Directory: Move into the project directory using:
 cd kubeword/
 ```
 
-Configuration: If needed, update the fallowing configuration files:
+Configuration: If needed, update the following configuration files:
 - **Infrastructure:** infrastructure/terraform/terraform.tfvars
 - **Application:** application/helm/wordpress/values.yaml
 
