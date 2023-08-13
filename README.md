@@ -19,11 +19,11 @@ KubeWord: A Kubernetes Adventure with WordPress &amp; MySQL! Launch, scale, and 
 
 ## Introduction and Features
 
-Welcome to kubeword! This is a project ment to help you get started with Wordpress on Kubernetes in a sec. Whether you're a Blogger, Writer or just want to try it for fun, Kubeword aims to help you create a Blog in seconds.
+Welcome to kubeword! This is a project meant to help you get started with Wordpress on Kubernetes in a sec. Whether you're a Blogger, Writer or just want to try it for fun, Kubeword aims to help you create a Blog in seconds.
 
 ### Key Features
 
-- **IaC deployment:** All you do is in the Cloud :cloud:
+- **IaC deployment:** Everything is done in the Cloud :cloud:
 - **Allways up to date:** New revisions of Wordpress are constantly updated so you can be safe on the net.
 - **Monitoring:** Grafana and Prometheus are great tools to give you meaningfull insights about the health of your Blog.
 
@@ -82,7 +82,7 @@ Congratulations! You have successfully installed kubeword. You can now get to ex
 
 Follow these instructions to effectively use kubeword:
 
-1. **Getting Started:** You can achive with this project a Wordpress Blog that is hosted in GKE - Google Kubernetes Engine. To take fully advantage of the project you can tweak it to your personal likings.
+1. **Getting Started:** You can achieve with this project a Wordpress Blog that is hosted in GKE - Google Kubernetes Engine. To take fully advantage of the project you can tweak it to your personal likings.
 
 2. **Step-by-Step Guide:** Hot to enable SSL on my Blog.
 
@@ -95,7 +95,7 @@ kubeword offers flexibility through configuration options that allow you to tail
 
    - **Terraform:** terraform.tfvars
 
-1. **Appication:** Open the `helm` directory in your project to find the configuration files. These files control various settings such as:
+1. **Application:** Open the `helm` directory in your project to find the configuration files. These files control various settings such as:
 
    - **Wordpress:** values.yaml
    - **Grafana:** values.yaml
@@ -112,7 +112,7 @@ This means you are free to:
 - **Distribute:** You can distribute the original or modified versions of kubeword in source or binary form.
 
 
-Please review the [LICENSE](LICENSE) file for the complete terms and conditions of the [License Name] License.
+Please review the [LICENSE](LICENSE) file for the complete terms and conditions of the Apache License.
 
 ## Contact Information
 
