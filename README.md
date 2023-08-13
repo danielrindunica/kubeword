@@ -24,8 +24,8 @@ Welcome to kubeword! This is a project ment to help you get started with Wordpre
 ### Key Features
 
 - **IaC deployment:** All you do is in the Cloud :cloud:
-- **Allways up to date:** New revisions of Wordpress are constantly updated so you can be safe on the net :computer:
-- **Monitoring:** Grafana and Prometheus are great tools to give you meaningfull insights about the health of your Blog. :heart:
+- **Allways up to date:** New revisions of Wordpress are constantly updated so you can be safe on the net.
+- **Monitoring:** Grafana and Prometheus are great tools to give you meaningfull insights about the health of your Blog.
 
 ## Installation
 
