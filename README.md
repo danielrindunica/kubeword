@@ -76,4 +76,28 @@ cd application/helm/grafana/
 helm install grafana .
 ```
 
-Congratulations! You have successfully installed kubeword. You can now get to explore the application and get your credentials by following the Helm prompt.
+Congratulations! You have successfully installed kubeword. You can now get to explore the application and get your credentials.
+
+## Usage
+
+Follow these instructions to effectively use kubeword:
+
+1. **Getting Started:** You can achive with this project a Wordpress Blog that is hosted in GKE - Google Kubernetes Engine. To take fully advantage of the project you can tweak it to your personal likings.
+
+2. **Step-by-Step Guide:** Hot to enable SSL on my Blog.
+
+To be completated
+
+## Configuration
+
+kubeword offers flexibility through configuration options that allow you to tailor the behavior of the project to your needs. Here's how you can configure the project:
+
+1. **Infrastructure:** Some aspects of kubeword can also be configured using infrastructure files. Refer to the `terraform` directory for the configuration files. These files include:
+
+   - **Terraform:** terraform.tfvars
+
+1. **Appication:** Open the `helm` directory in your project to find the configuration files. These files control various settings such as:
+
+   - **Wordpress:** values.yaml
+   - **Grafana:** values.yaml
+   - **Prometheus:** values.yaml
