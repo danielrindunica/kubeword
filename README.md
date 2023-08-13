@@ -76,4 +76,4 @@ cd application/helm/grafana/
 helm install grafana .
 ```
 
-Congratulations! You have successfully installed kubeword. You can now get to explore the application and get your credentials by fallowing the Helm prompt.
+Congratulations! You have successfully installed kubeword. You can now get to explore the application and get your credentials by following the Helm prompt.
