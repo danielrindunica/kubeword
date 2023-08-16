@@ -7,15 +7,9 @@ KubeWord: A Kubernetes Adventure with WordPress &amp; MySQL! Launch, scale, and 
 - [Table of Contents](#table-of-contents)
 - [Introduction and Features](#introduction-and-features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Configuration](#configuration)
-- [API Documentation](#api-documentation)
-- [Contributing Guidelines](#contributing-guidelines)
-- [Code Examples](#code-examples)
-- [Troubleshooting and FAQ](#troubleshooting-and-faq)
 - [License](#license)
 - [Contact Information](#contact-information)
-- [Acknowledgments](#acknowledgments)
 
 ## Introduction and Features
 
@@ -78,14 +72,6 @@ helm install grafana .
 
 Congratulations! You have successfully installed kubeword. You can now get to explore the application and get your credentials.
 
-## Usage
-
-Follow these instructions to effectively use kubeword:
-
-1. **Getting Started:** You can achieve with this project a Wordpress Blog that is hosted in GKE - Google Kubernetes Engine. To take fully advantage of the project you can tweak it to your personal likings.
-
-2. **Step-by-Step Guide:** Hot to enable SSL on my Blog.
-
 
 ## Configuration
 
@@ -123,4 +109,3 @@ If you have questions, feedback, suggestions, or just want to say hello, feel fr
 - GitHub: [danielrindunica](https://github.com/danielrindunica)
 
 We value your input and would love to hear from you!
-
