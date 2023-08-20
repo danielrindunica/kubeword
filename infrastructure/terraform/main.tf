@@ -5,9 +5,16 @@ module "gke" {
   description       = var.description
   region            = var.region
   zones             = var.zones
-  network           = var.network
+  network           = module.vpc.network_name
   subnetwork        = var.subnetwork[0]
   ip_range_pods     = var.ip_range_pods
   ip_range_services = var.ip_range_services
   node_pools        = var.node_pools
+}
+
+module "vpc" {
+  source                  = "github.com/terraform-google-modules/terraform-google-network//modules/vpc?ref=v7.3.0"
+  project_id              = var.project_id
+  network_name            = var.network_name
+  auto_create_subnetworks = var.auto_create_subnetworks
 }

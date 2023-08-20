@@ -38,3 +38,11 @@ variable "node_pools" {
   type        = list(map(any))
   description = "List of maps containing node pools"
 }
+variable "network_name" {
+  type        = string
+  description = "The name of the network being created"
+}
+variable "auto_create_subnetworks" {
+  type        = bool
+  description = "value"
+}
