@@ -18,6 +18,14 @@ variable "zones" {
   type        = list(string)
   description = "The zones to host the cluster in (optional if regional cluster / required if zonal)"
 }
+variable "network" {
+  type        = string
+  description = "The VPC network to host the cluster in (required)"
+}
+variable "subnetwork" {
+  type        = list(string)
+  description = "The name for the subnetwork"
+}
 variable "ip_range_pods" {
   type        = string
   description = "The name of the secondary subnet ip range to use for pods"
@@ -29,12 +37,4 @@ variable "ip_range_services" {
 variable "node_pools" {
   type        = list(map(any))
   description = "List of maps containing node pools"
-}
-variable "network_name" {
-  type        = string
-  description = "The name of the network being created"
-}
-variable "auto_create_subnetworks" {
-  type        = bool
-  description = "value"
 }
