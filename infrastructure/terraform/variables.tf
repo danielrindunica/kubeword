@@ -18,14 +18,6 @@ variable "zones" {
   type        = list(string)
   description = "The zones to host the cluster in (optional if regional cluster / required if zonal)"
 }
-variable "network" {
-  type        = string
-  description = "The VPC network to host the cluster in (required)"
-}
-variable "subnetwork" {
-  type        = list(string)
-  description = "The name for the subnetwork"
-}
 variable "ip_range_pods" {
   type        = string
   description = "The name of the secondary subnet ip range to use for pods"
@@ -45,56 +37,4 @@ variable "network_name" {
 variable "auto_create_subnetworks" {
   type        = bool
   description = "value"
-}
-variable "ingress_rules" {
-  type = list(object({
-    name                    = string
-    description             = optional(string, null)
-    priority                = optional(number, null)
-    destination_ranges      = optional(list(string), [])
-    source_ranges           = optional(list(string), [])
-    source_tags             = optional(list(string))
-    source_service_accounts = optional(list(string))
-    target_tags             = optional(list(string))
-    target_service_accounts = optional(list(string))
-
-    allow = optional(list(object({
-      protocol = string
-      ports    = optional(list(string))
-    })), [])
-    deny = optional(list(object({
-      protocol = string
-      ports    = optional(list(string))
-    })), [])
-    log_config = optional(object({
-      metadata = string
-    }))
-  }))
-  description = "List of ingress rules. This will be ignored if variable 'rules' is non-empty"
-}
-variable "egress_rules" {
-  type = list(object({
-    name                    = string
-    description             = optional(string, null)
-    priority                = optional(number, null)
-    destination_ranges      = optional(list(string), [])
-    source_ranges           = optional(list(string), [])
-    source_tags             = optional(list(string))
-    source_service_accounts = optional(list(string))
-    target_tags             = optional(list(string))
-    target_service_accounts = optional(list(string))
-
-    allow = optional(list(object({
-      protocol = string
-      ports    = optional(list(string))
-    })), [])
-    deny = optional(list(object({
-      protocol = string
-      ports    = optional(list(string))
-    })), [])
-    log_config = optional(object({
-      metadata = string
-    }))
-  }))
-  description = "List of egress rules. This will be ignored if variable 'rules' is non-empty"
 }
