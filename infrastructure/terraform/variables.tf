@@ -72,8 +72,6 @@ variable "ingress_rules" {
   }))
   description = "List of ingress rules. This will be ignored if variable 'rules' is non-empty"
 }
-
-
 variable "egress_rules" {
   type = list(object({
     name                    = string
