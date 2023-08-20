@@ -38,3 +38,63 @@ variable "node_pools" {
   type        = list(map(any))
   description = "List of maps containing node pools"
 }
+variable "network_name" {
+  type        = string
+  description = "The name of the network being created"
+}
+variable "auto_create_subnetworks" {
+  type        = bool
+  description = "value"
+}
+variable "ingress_rules" {
+  type = list(object({
+    name                    = string
+    description             = optional(string, null)
+    priority                = optional(number, null)
+    destination_ranges      = optional(list(string), [])
+    source_ranges           = optional(list(string), [])
+    source_tags             = optional(list(string))
+    source_service_accounts = optional(list(string))
+    target_tags             = optional(list(string))
+    target_service_accounts = optional(list(string))
+
+    allow = optional(list(object({
+      protocol = string
+      ports    = optional(list(string))
+    })), [])
+    deny = optional(list(object({
+      protocol = string
+      ports    = optional(list(string))
+    })), [])
+    log_config = optional(object({
+      metadata = string
+    }))
+  }))
+  description = "List of ingress rules. This will be ignored if variable 'rules' is non-empty"
+}
+variable "egress_rules" {
+  type = list(object({
+    name                    = string
+    description             = optional(string, null)
+    priority                = optional(number, null)
+    destination_ranges      = optional(list(string), [])
+    source_ranges           = optional(list(string), [])
+    source_tags             = optional(list(string))
+    source_service_accounts = optional(list(string))
+    target_tags             = optional(list(string))
+    target_service_accounts = optional(list(string))
+
+    allow = optional(list(object({
+      protocol = string
+      ports    = optional(list(string))
+    })), [])
+    deny = optional(list(object({
+      protocol = string
+      ports    = optional(list(string))
+    })), [])
+    log_config = optional(object({
+      metadata = string
+    }))
+  }))
+  description = "List of egress rules. This will be ignored if variable 'rules' is non-empty"
+}
